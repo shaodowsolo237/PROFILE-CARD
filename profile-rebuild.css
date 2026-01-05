@@ -14,13 +14,12 @@ body{
 
 .profile-card{
     width:300px;
-    height:300px;
+    max-width:90%;
     background: white;
     text-align: center;
-    margin:30px auto;
     padding:30px;
-    box-shadow: 2px 3px 4px gray;
-    border-radius:9px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        border-radius:9px;
 
 
 }
@@ -33,7 +32,9 @@ body{
 
 }
 
-.following{
+.follow-btn{
+    text-decoration:none;
+    margin-top: 15px;
     display:inline-block;
     background-color: blue;
     color:white;
@@ -41,18 +42,25 @@ body{
     border-radius:3px;
     width:100px;
     padding:10px 20px;
-    text-decoration:none;
-    margin-top: 15px;
-    transition:0.4s ease;
+    transition:background-color 0.4s ease;
+    font-weight:600;
 
 }
 
-.following:hover{
+.follow-btn:hover{
     background-color:darkblue;
+    transform:translateY(-2px);
+    box-shadow:0 4px 12px rgba(0, 119, 255,0.3);
 }
 
 .skills{
     color:gray;
     font-size:1rem;
+    margin:5px 0 15px 0;
     
+}
+.institutions{
+    color:#888;
+    font-size:0.9rem;
+    margin:5px 0;
 }
